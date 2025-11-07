@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEDIDOS</title>
+    <link rel="stylesheet" href="../CSS/pedidos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../img/Fasticon-Coffee-Break-Bread.ico" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logotipo">
+            <img src="../img/Logotipo.png" alt="logotipo da loja">
+        </div>
+        <h1>Faça seu pedido aqui mesmo pela internet!</h1>
+        <h3>Preencha todos os dados do formulário abaixo:</h3>
+    </header>
+    <form id="pedidos" method="post">
+        <fieldset>
+            <legend>Informações Pessoais:</legend>
+            <img src="../img/Logotipo.png" alt="logotipo da Padaria" class="decoracao">
+            <label for="txt_nome">Nome Completo:</label>
+            <input type="text" id="txt_nome" required>
+            <br>
+            <label for="txt_email">E-mail:</label>
+            <input type="email" id="txt_email" required>
+            <br>
+            <label for="txt_telefone">Telefone:</label>
+            <input type="tel" id="txt_telefone" placeholder="(00) 00000-0000" required>
+        </fieldset>
+        <fieldset>
+            <legend>Escolha o seu pedido aqui:</legend>
+            <img src="../img/Logotipo.png" alt="logotipo da Padaria" class="decoracao">
+            <section class="pedidos">
+                <i class="fa-solid fa-star"></i>
+                <label for="rd_somePesadelo">Some Pesadelos - R$15,00</label>
+                <input type="radio" name="pedido" id="rd_somePesadelo" value="Some Pesadelos" data-preco="15,00" checked>
+                <br>
+                <i class="fa-solid fa-star"></i>
+                <label for="rd_misto">Misto de Nostalgia - R$8,00</label>
+                <input type="radio" name="pedido" id="rd_misto" value="Misto de Nostalgia" data-preco="8,00">
+                <br>
+                <i class="fa-solid fa-star"></i>
+                <label for="rd_Marsh">Marshmallows da Conquista - R$18,99</label>
+                <input type="radio" name="pedido" id="rd_Marsh" value="Marshmallows da Conquista" data-preco="18,99">
+                <br>
+                <i class="fa-solid fa-star"></i>
+                <label for="rd_matcha">Matcha dos Sonhos - R$10,20</label>
+                <input type="radio" name="pedido" id="rd_matcha" value="Matcha dos Sonhos" data-preco="10,20">
+                <br>
+                <i class="fa-solid fa-star"></i>
+                <label for="rd_brig">Brigadeiro Explosão - R$16,50</label>
+                <input type="radio" name="pedido" id="rd_brig" value="Brigadeiro Explosão" data-preco="16,50">
+            </section>
+        </fieldset>
+        <fieldset>
+            <legend>Detalhes do Pedido:</legend>
+            <img src="../img/Logotipo.png" alt="logotipo da Padaria" class="decoracao">
+            <label for="txt_qtd">Quantidade:</label>
+            <input type="number" id="txt_qtd" min="1" value="1" required>
+            <br>
+            <label for="txt_data">Data de Entrega:</label>
+            <input type="date" id="txt_data" name="data_entrega" required>
+            <br>
+            <label for="txt_horario">Horário da Entrega:</label>
+            <input type="time" id="txt_horario" required>
+            <br>
+            <label for="txt_local">Local de Entrega:</label>
+            <input type="text" id="txt_local" required>
+            <hr>
+            <label for="txt_detalhes">Observações Adicionais:</label>
+            <br>
+            <textarea name="" id="txt_detalhes" placeholder="Campo não obrigatório" cols="60" rows="5" ></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Tipo de pagamento:</legend>
+            <ul class="pagamentos">
+                <li>
+                    <label for="rd_money">Dinheiro</label>
+                    <input type="radio" name="pgmt" id="rd_money" value="Dinheiro" checked>
+                </li>
+                <li>
+                    <label for="rd_pix">PIX</label>
+                    <input type="radio" name="pgmt" id="rd_pix" value="Pix">
+                </li>
+                <li>
+                    <label for="rd_cred">Cartão Crédito</label>
+                    <input type="radio" name="pgmt" id="rd_cred" value="Cartão Cred">
+                </li>
+                <li>
+                    <label for="rd_deb">Cartão Débito</label>
+                    <input type="radio" name="pgmt" id="rd_deb" value="Cartão Deb">
+                </li>
+                <li>
+                    <img src="../img/Logotipo.png" alt="logotipo da Padaria" class="decoracao">
+                </li>
+            </ul>
+            <br>
+            <label for="txt_orcamento">Orçamento Aproximado:</label>
+            <button type="button" id="btnOrcamento">Conferir</button>
+            <p id="resOrcamento"></p>
+        </fieldset>
+        <div class="finalizar">
+            <button type="submit">Enviar Pedido
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+            <button type="reset">Limpar Campos
+                <i class="fa-solid fa-broom"></i>
+            </button> 
+            <button class="btn_voltar" type="button" onclick="window.history.back('../index.html')">Voltar a página inicial
+                <i class="fa-solid fa-rotate-left"></i>
+            </button>       
+        </div>
+    </form>
+    <br>
+    <p class="rodape">&copy; Todos os dieritos autorais reservados para a Padaria Bons Sonhos.</p>
+    <script src="../JS/pedidos.js"></script>
+</body>
+</html>

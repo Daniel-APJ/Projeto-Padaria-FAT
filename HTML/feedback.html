@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deixe seu Feedback!</title>
+    <link rel="stylesheet" href="../CSS/feedback.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../img/Fasticon-Coffee-Break-Bread.ico" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logotipo">
+            <img src="../img/Logotipo.png" alt="logotipo da loja">
+        </div>
+        <h1>Escreva um Feedback para nós melhorarmos:</h1>
+    </header>
+    <br>
+    <br>
+    <form id="feedback">
+        <fieldset>
+            <legend>Feedback:</legend>
+            <img src="../img/Logotipo.png" alt="logotipo da Padaria" class="decoracao">
+            <label for="txt_nome">Nome Completo:</label>
+            <input type="text" name="" id="txt_nome">
+            <br>
+            <label for="txt_idade">Idade:</label>
+            <input type="number" name="" id="txt_idade" min="5">
+            <br>
+            <label for="rng_star">Avalie o serviço:</label>
+            <br>
+            <div class="estrelas">
+                <i class="fa-solid fa-star"> 0</i>
+                <i class="fa-solid fa-star"> 1</i>
+                <i class="fa-solid fa-star"> 2</i>
+                <i class="fa-solid fa-star"> 3</i>
+                <i class="fa-solid fa-star"> 4</i>
+                <i class="fa-solid fa-star"> 5</i>
+            </div>
+            <br>
+            <input type="range" name="" id="rng_star" min="0" max="5" value="3">
+            <br>
+            <label for="txt_mnsg">Nos conte em detalhes as suas observações:</label>
+            <br>
+            <textarea name="" id="txt_mnsg" required></textarea>
+            <br>
+            <div class="botoes">
+                <button type="submit">Enviar Feedback
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+            </div>
+        </fieldset>
+    </form>
+    <p class="rodape">&copy; Todos os dieritos autorais reservados para a Padaria Bons Sonhos.</p>
+
+    <script src="../JS/feedback.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar novo usuário</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="../img/Fasticon-Coffee-Break-Bread.ico" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="../CSS/cadastro.css">
+</head>
+<body>
+    <header>
+        <div class="logotipo">
+            <img src="../img/Logotipo.png" alt="logotipo da loja">
+        </div>
+        <h1>Fique por dentro das novidades!</h1>
+        <br>
+        <h4>Cadastre-se para receber nossas promoções e alertas de novos produtos!</h4>
+    </header>
+    <form id="cadastro">
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <img src="../img/Logotipo.png" alt="logotipo da Padaria" class="decoracao">
+            <label for="txt_nome">Nome Completo:</label>
+            <input type="text" id="txt_nome" required>
+            <br>
+            <label for="txt_idade">Idade:</label>
+            <input type="number" id="txt_idade">
+            <br>
+            <label for="cmb_genero">Gênero:</label>
+            <select name="genero" id="cmb_genero">
+                <option value="">Selecione...</option>
+                <option value="Homem">Homem</option>
+                <option value="Mulher">Mulher</option>
+                <option value="Outro">Outro</option>
+            </select>
+            <br>
+            <label for="txt_email">E-mail:</label>
+            <input type="email" id="txt_email" required>
+            <br>
+            <label for="txt_telefone">Telefone:</label>
+            <input type="tel" id="txt_telefone" placeholder="(00) 0000-0000">
+            <br>
+            <label for="">Data de Nascimento:</label>
+            <input type="date" id="txt_data"><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Endereço:</legend>
+            <img src="../img/Logotipo.png" alt="logotipo da Padaria" class="decoracao">
+            <label for="txt_cep">CEP:</label>
+            <input type="number" id="txt_cep" placeholder="00000-000" required>
+            <br>
+            <label for="txt_estado">Estado:</label>
+            <select name="Estado" id="txt_estado" required>
+                <option value="">Selecione...</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Bahia">Bahia</option>
+            </select>
+            <label for="txt_cidade">Cidade:</label>
+            <input type="text" name="Cidade" id="txt_cidade" required>
+            <br>
+            <label for="txt_rua">Rua:</label>
+            <input type="text" id="txt_rua" required>
+            <label for="txt_number">Número:</label>
+            <input type="number" placeholder="N°" id="txt_number">
+            <br>
+            <label for="txt_compl">Complemento:</label>
+            <input type="text" id="txt_compl" placeholder="Bloco, Ap...">
+        </fieldset>
+        <br>
+        <button type="submit">Cadastrar Novo Usuário
+            <i class="fa-solid fa-circle-plus"></i>
+        </button>
+    </form>
+    <p class="rodape">&copy; Todos os dieritos autorais reservados para a Padaria Bons Sonhos.</p>
+
+    <script src="../JS/cadastro.js"></script>
+</body>
+</html>

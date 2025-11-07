@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Helvetica, sans-serif;
+}
+
+:root {
+    --branco: #ffffff;
+    --cor-fundo: #FFE3D5;
+    --cor-fundo-2: #eccfc4;
+    --cor-texto: #734B3D;
+    --cor-texto-2: #8C6354;
+    --marrom-claro: #B38873;
+}
+
+button, 
+a {
+    cursor: pointer;
+}
+
+header {
+    background-color: var(--cor-fundo);
+    width: 100%;
+    padding: 10px;
+}
+
+.logotipo {
+    width: 88px;
+    position: absolute;
+    margin: 5px;
+}
+
+.logotipo img {
+    width: 100%;
+}
+
+h1 {
+    margin-left: 99px;
+    color: var(--cor-texto);
+    margin-top: 20px;
+}
